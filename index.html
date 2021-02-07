@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Cooking - Monster</title>
+</head>
+
+<body>
+    <section class="container" style="padding-top: 0;">
+        <div class="nav">
+            <div class="title">
+                <h1>Cooking Monster</h1>
+            </div>
+            <div class="nav-item">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="container sectionPadding">
+            <div class="form">
+                <input type="text" id="searchKey" placeholder="Search for Meal" required onfocus="onChangetask()">
+                <button id="searchBtn" onclick="onSubmittask()">Search</button>
+            </div>
+            <div id="alert">
+                <p id="alertMsg"></p>
+            </div>
+        </section>
+        <section class="container sectionPadding" id="details">
+            <div class="detail">
+                <h3>Ingredients:</h3>
+                <hr>
+                <ol id="list">
+                </ol>
+            </div>
+        </section>
+        <section class="container">
+            <div class="foods" id="foodContainer">
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
