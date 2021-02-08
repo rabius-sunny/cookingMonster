@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Cooking - Monster</title>
 </head>
 
 <body>
+    <!-- Navigation Area -->
     <section class="container" style="padding-top: 0;">
         <div class="nav">
             <div class="title">
@@ -28,6 +31,8 @@
     </section>
 
     <main>
+
+        <!-- Input Area -->
         <section class="container sectionPadding">
             <div class="form">
                 <input type="text" id="searchKey" placeholder="Search for Meal" required onfocus="onChangetask()">
@@ -37,21 +42,28 @@
                 <p id="alertMsg"></p>
             </div>
         </section>
+
+        <!-- Individual Result Area -->
         <section class="container sectionPadding" id="details">
             <div class="detail">
-                <h3>Ingredients:</h3>
-                <hr>
-                <ol id="list">
-                </ol>
+                <img id="detailImg">
+                <h1 id="detailName"></h1>
+                <h4>Ingredients:</h4>
+                <ul id="list">
+                </ul>
             </div>
         </section>
+
+        <!-- Main Search Result Area -->
         <section class="container">
             <div class="foods" id="foodContainer">
             </div>
         </section>
+
     </main>
 
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/514ac4699c.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
