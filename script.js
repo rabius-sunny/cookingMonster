@@ -79,3 +79,6 @@ const showDetail = name => {
         detailArea.style.display = 'block'
     }
 }
+
+// Initial Interface
+getFoodName('butter')
